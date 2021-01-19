@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Екатерина](https://up.htmlacademy.ru/htmlcss/30/user/62162).
-* Наставник: `Неизвестно`.
+* Студент: [Екатерина Ермолаева](https://up.htmlacademy.ru/htmlcss/30/user/62162).
+* Наставник: [Евгений Карпов](https://htmlacademy.ru/profile/id70583).
 
 ---
 
