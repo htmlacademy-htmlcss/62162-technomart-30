@@ -8,25 +8,29 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <div class="header__top">
       <div class="container">
-        <a href="#" class="logo">Техномарт</a>
+        <a href="#" class="logo">
+          <img src="img/logo-technomart.svg" alt="Логотип Техномарт">
+        </a>
         <form action="https://echo.htmlacademy.ru" method="get" class="header__search search-form">
           <input type="search" placeholder="Поиск:" class="search-form__field" />
         </form>
         <div class="header__goods-options goods-options">
-          <a href="#">Закладки: <span>0</span></a>
-          <a href="#">Корзина: <span>10</span></a>
-          <a href="#">Оформить заказ</a>
+          <a href="#" class="goods-options__item">Закладки: <span>0</span></a>
+          <a href="#" class="goods-options__item cart cart--filled">Корзина: <span>10</span></a>
+          <a href="#" class="goods-options__item goods-options__item--order">Оформить заказ</a>
         </div>
       </div>
     </div>
     <div class="header__bottom">
       <div class="container">
-        <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта</р1>
+        <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <address class="header__contacts header-contacts">
           <a href="tel:+78125550555" class="header-contacts__phone">+7 (812) 555-05-55</a>
           <p class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -72,7 +76,7 @@
     <h2 class="container page-title">Перфораторы</h2>
     <div class="container">
       <section class="catalog-filters">
-        <h3 class="catalog-filters__title">Фильтр:</h3>
+        <h3 class="catalog-filters__title section-title">Фильтр:</h3>
         <form action="https://echo.htmlacademy.ru" method="get" class="catalog-filters__form">
           <fieldset class="catalog-filters__item filter">
             <legend class="filter__title">Цена:</legend>
@@ -121,15 +125,15 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="catalog-filters__submit">Показать</button>
+          <button type="submit" class="catalog-filters__submit transparent-button">Показать</button>
         </form>
       </section>
       <section class="catalog">
         <h3 class="catalog__title">Каталог перфораторов</h3>
         <div class="catalog__sorting sorting">
-          <h4 class="sorting__title">Сортировка:</h4>
+          <h4 class="sorting__title section-title">Сортировка:</h4>
           <div class="sorting__controls">
-            <a href="#" class="sorting__item">По цене</a>
+            <a href="#" class="sorting__item sorting__item--active">По цене</a>
             <a href="#" class="sorting__item">По типу</a>
             <a href="#" class="sorting__item">По функционалу</a>
           </div>
@@ -149,8 +153,8 @@
             <p class="product-item__price-before">30500 Р.</p>
             <a  href="#" class="product-item__link">25500 Р.</a>
             <div class="product-item__options product-options">
-              <a href="#" class="product-options__link">Купить</a>
-              <a href="#" class="product-options__link">В закладки</a>
+              <a href="#" class="product-options__link product-options__link--buy">Купить</a>
+              <a href="#" class="product-options__link product-options__link--tab">В закладки</a>
             </div>
           </li>
           <li class="catalog__item product-item">
@@ -159,8 +163,8 @@
             <p class="product-item__price-before">30500 Р.</p>
             <a  href="#" class="product-item__link">25500 Р.</a>
             <div class="product-item__options product-options">
-              <a href="#" class="product-options__link">Купить</a>
-              <a href="#" class="product-options__link">В закладки</a>
+              <a href="#" class="product-options__link product-options__link--buy">Купить</a>
+              <a href="#" class="product-options__link product-options__link--tab">В закладки</a>
             </div>
           </li>
           <li class="catalog__item product-item">
@@ -169,8 +173,8 @@
             <p class="product-item__price-before">30500 Р.</p>
             <a  href="#" class="product-item__link">25500 Р.</a>
             <div class="product-item__options product-options">
-              <a href="#" class="product-options__link">Купить</a>
-              <a href="#" class="product-options__link">В закладки</a>
+              <a href="#" class="product-options__link product-options__link--buy">Купить</a>
+              <a href="#" class="product-options__link product-options__link--tab">В закладки</a>
             </div>
           </li>
           <li class="catalog__item product-item">
@@ -179,8 +183,8 @@
             <p class="product-item__price-before">22500 Р.</p>
             <a href="#" class="product-item__link">15500 Р.</a>
             <div class="product-item__options product-options">
-              <a href="#" class="product-options__link">Купить</a>
-              <a href="#" class="product-options__link">В закладки</a>
+              <a href="#" class="product-options__link product-options__link--buy">Купить</a>
+              <a href="#" class="product-options__link product-options__link--tab">В закладки</a>
             </div>
           </li>
           <li class="catalog__item product-item">
@@ -189,8 +193,8 @@
             <p class="product-item__price-before">30500 Р.</p>
             <a  href="#" class="product-item__link">25500 Р.</a>
             <div class="product-item__options product-options">
-              <a href="#" class="product-options__link">Купить</a>
-              <a href="#" class="product-options__link">В закладки</a>
+              <a href="#" class="product-options__link product-options__link--buy">Купить</a>
+              <a href="#" class="product-options__link product-options__link--tab">В закладки</a>
             </div>
           </li>
           <li class="catalog__item product-item">
@@ -199,8 +203,8 @@
             <p class="product-item__price-before">22500 Р.</p>
             <a href="#" class="product-item__link" >12500 Р.</a>
             <div class="product-item__options product-options">
-              <a href="#" class="product-options__link">Купить</a>
-              <a href="#" class="product-options__link">В закладки</a>
+              <a href="#" class="product-options__link product-options__link--buy">Купить</a>
+              <a href="#" class="product-options__link product-options__link--tab">В закладки</a>
             </div>
           </li>
           <li class="catalog__item product-item">
@@ -209,8 +213,8 @@
             <p class="product-item__price-before">22500 Р.</p>
             <a href="#" class="product-item__link">15500 Р.</a>
             <div class="product-item__options product-options">
-              <a href="#" class="product-options__link">Купить</a>
-              <a href="#" class="product-options__link">В закладки</a>
+              <a href="#" class="product-options__link product-options__link--buy">Купить</a>
+              <a href="#" class="product-options__link product-options__link--tab">В закладки</a>
             </div>
           </li>
           <li class="catalog__item product-item">
@@ -219,8 +223,8 @@
             <p class="product-item__price-before">30500 Р.</p>
             <a  href="#" class="product-item__link">25500 Р.</a>
             <div class="product-item__options product-options">
-              <a href="#" class="product-options__link">Купить</a>
-              <a href="#" class="product-options__link">В закладки</a>
+              <a href="#" class="product-options__link product-options__link--buy">Купить</a>
+              <a href="#" class="product-options__link product-options__link--tab">В закладки</a>
             </div>
           </li>
           <li class="catalog__item product-item">
@@ -229,24 +233,24 @@
             <p class="product-item__price-before">22500 Р.</p>
             <a href="#" class="product-item__link" >12500 Р.</a>
             <div class="product-item__options product-options">
-              <a href="#" class="product-options__link">Купить</a>
-              <a href="#" class="product-options__link">В закладки</a>
+              <a href="#" class="product-options__link product-options__link--buy">Купить</a>
+              <a href="#" class="product-options__link product-options__link--tab">В закладки</a>
             </div>
           </li>
         </ul>
       </section>
       <ul class="pagination">
         <li class="pagination__page pagination__page--current">
-          <a>1</a>
+          <a class="transparent-button">1</a>
         </li>
         <li class="pagination__page">
-          <a href="#">2</a>
+          <a href="#" class="transparent-button">2</a>
         </li>
         <li class="pagination__page">
-          <a href="#">3</a>
+          <a href="#" class="transparent-button">3</a>
         </li>
         <li class="pagination__page">
-          <a href="#">Следующая</a>
+          <a href="#" class="transparent-button">Следующая</a>
         </li>
       </ul>
     </div>
@@ -263,7 +267,9 @@
     <div class="footer__top">
       <div class="container">
         <div class="footer__section company-info">
-          <a href="#" class="logo company-info__logo">Техномарт</a>
+          <a href="#" class="logo company-info__logo">
+            <img src="img/logo-technomart.svg" alt="Логотип Техномарт">
+          </a>
           <p class="company-info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
         </div>
         <ul class="footer__section footer-nav">
@@ -306,13 +312,19 @@
           <h2 class="social__title">Давайте дружить!</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link">Вконтакте</a>
+              <a href="#" class="social__link">
+                <img src="img/icons/icon-vk.svg" alt="Вконтакте">
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link">Фейсбук</a>
+              <a href="#" class="social__link">
+                <img src="img/icons/icon-fb.svg" alt="Фейсбук">
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link">Инстаграм</a>
+              <a href="#" class="social__link">
+                <img src="img/icons/icon-insta.svg" alt="Инстаграм">
+              </a>
             </li>
           </ul>
         </section>
