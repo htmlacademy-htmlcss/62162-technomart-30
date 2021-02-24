@@ -662,6 +662,7 @@ img {
   text-transform: uppercase;
   background-color: transparent;
   border: 1px solid var(--special-lightest-gray);
+  cursor: pointer;
 }
 
 .transparent-button:hover {
@@ -712,6 +713,11 @@ img {
 .catalog__list {
   list-style: none;
   font-family: "PT Sans", "Verdana", sans-serif;
+}
+
+.product-item {
+  border: 1px solid var(--basic-gray);
+  box-sizing: border-box;
 }
 
 /*Pagination*/
