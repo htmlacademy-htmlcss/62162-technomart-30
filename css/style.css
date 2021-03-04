@@ -801,6 +801,10 @@ img {
   text-transform: uppercase;
 }
 
+.catalog-filters__item {
+  border: 0;
+}
+
 .section-title{
   background-color: var(--basic-beige);
   font-size: 13px;
